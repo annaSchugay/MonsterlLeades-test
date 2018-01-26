@@ -1,0 +1,201 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "font-awesome";
+  src: url("../fonts/FontAwesome/FontAwesome.otf"); }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf"); }
+
+@font-face {
+  font-family: "font-awesome";
+  src: url("../fonts/FontAwesome/FontAwesome.otf"); }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf"); }
+
+header {
+  background-color: #000;
+  color: #fff; }
+  header .logo {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px; }
+    @media (max-width: 992px) {
+      header .logo {
+        text-align: center; } }
+  header .our-benefits {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    header .our-benefits ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      header .our-benefits ul li {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        color: #a9abaf;
+        letter-spacing: -1px;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        margin-top: 10px;
+        margin-bottom: 5px; }
+        header .our-benefits ul li img {
+          display: block;
+          margin-right: 5px; }
+        header .our-benefits ul li:first-child {
+          position: relative;
+          -webkit-transform: translateX(-35px);
+              -ms-transform: translateX(-35px);
+                  transform: translateX(-35px); }
+          @media (max-width: 992px) {
+            header .our-benefits ul li:first-child {
+              -webkit-transform: translateX(0);
+                  -ms-transform: translateX(0);
+                      transform: translateX(0); } }
+        @media (max-width: 992px) {
+          header .our-benefits ul li {
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                    justify-content: center; } }
+      @media (max-width: 992px) {
+        header .our-benefits ul {
+          -webkit-justify-content: space-around;
+              -ms-flex-pack: distribute;
+                  justify-content: space-around; } }
+      @media (max-width: 560px) {
+        header .our-benefits ul {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column; } }
+  header button {
+    background: url("../img/phone-in-circle.png") 15px 50%;
+    background-repeat: no-repeat;
+    background-color: #39d84c;
+    border: none;
+    -webkit-border-radius: 25px;
+            border-radius: 25px;
+    -webkit-box-shadow: 1px 3px 16px 1px #39d84c;
+            box-shadow: 1px 3px 16px 1px #39d84c;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 12px 15px 12px 45px;
+    color: #fff;
+    outline: none;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    header button:hover {
+      cursor: pointer;
+      -webkit-box-shadow: 0px 0px 0px 0px #39d84c;
+              box-shadow: 0px 0px 0px 0px #39d84c; }
+    @media (max-width: 992px) {
+      header button {
+        margin: 25px auto; } }
+
+.banner {
+  min-height: 595px;
+  background: url("../img/women.png") 0 -68px no-repeat;
+  background-color: #1f2147; }
+  .banner .order-discount {
+    background-image: url("../img/form-bg.png");
+    -webkit-background-size: cover;
+            background-size: cover;
+    padding: 0 30px 40px 30px; }
+    .banner .order-discount form * {
+      width: 100%; }
+
+body {
+  font-family: Roboto, sans-serif; }
+  @media (min-width: 992px) {
+    body .row {
+      margin-right: -30px;
+      margin-left: -30px; } }
+
+.row-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+h1 {
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 48px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center; }
+
+h3 {
+  font-size: 22px;
+  line-height: 30px;
+  color: #c2c4eb;
+  text-align: center; }
+  h3 span {
+    color: #ffe200; }

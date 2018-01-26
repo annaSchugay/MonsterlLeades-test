@@ -1,0 +1,18 @@
+@import "variables";
+
+.banner {
+  min-height: 595px;
+  background: url("../img/women.png") 0 -68px no-repeat;
+  background-color: $background-color;
+  .order-discount {
+    background-image: url('../img/form-bg.png');
+    background-size: cover;
+    padding: 0 30px 40px 30px;
+
+    form {
+      * {
+        width: 100%;
+      }
+    }
+  }
+}

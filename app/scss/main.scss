@@ -1,0 +1,47 @@
+@import "reset";
+@import "fonts";
+@import "variables";
+@import "mixins/breackpoint";
+@import "fonts";
+@import "header";
+@import "banner";
+
+body {
+  font-family: $font-family;
+  .row {
+    @include breakpoint(small-medium) {
+      margin-right: -30px;
+      margin-left: -30px;
+    }
+  }
+}
+
+.row-flex {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 48px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 30px;
+  color: #c2c4eb;
+  text-align: center;
+  span {
+    color: $accent-color;
+  }
+}
