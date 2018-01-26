@@ -28,12 +28,27 @@ img {
 }
 
 h1 {
-  padding-left: 40px;
-  padding-right: 40px;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
   font-size: 48px;
+  letter-spacing: -1px;
   line-height: 50px;
   color: #fff;
   text-align: center;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    width: 70px;
+    height: 7px;
+    background: url('../img/line.png') -5px 0;
+    background-repeat-y: no-repeat;
+  }
 }
 
 h3 {
@@ -41,6 +56,9 @@ h3 {
   line-height: 30px;
   color: #c2c4eb;
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  letter-spacing: -0.5px;
   span {
     color: $accent-color;
   }
