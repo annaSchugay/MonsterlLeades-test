@@ -9,6 +9,33 @@
     .products-pictures-wrapper {
       position: relative;
       min-height: 330px;
+      .accent-text {
+        position: absolute;
+        z-index: 1;
+        width: 100px;
+        top: 108px;
+        left: -65px;
+        p {
+          position: relative;
+          padding: 10px;
+          font-size: 22px;
+          line-height: 24px;
+          color: #fd5e7e;
+          text-align: center;
+          &:after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            width: 100px;
+            height: 40px;
+            background-image: url('../img/arrow.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+      
       .layer-first {
         position: absolute;
         left: 15px;
@@ -32,64 +59,102 @@
 
       .products {
         position: absolute;
-        top: 50%;
-        left: 70px;
-        transform: translateY(-25%);
         .product {
+          position: absolute;
+          top: 207px;
+          left: 353px;
+          transform: translateX(-45%) translateY(-50%);
           .picture {
             display: block;
+            img {
+              max-width: none;
+            }
+
             &:after {
               content: '';
               display: block;
-              box-shadow: -61px -30px 86px 16px #fff;
+              box-shadow: -61px -60px 86px 16px #fff;
             }
           }
 
           .label-block {
-            position: relative;
+            position: absolute;
             display: block;
+            top: 280px;
             .logo {
               position: relative;
               width: 100px;
               height: 89px;
-              transform: translateX(-43%) translateY(-72%) skew(45deg);
+              transform: translateX(-40px) translateY(-61px) skew(45deg);
               &:after {
                 position: absolute;
                 content: "";
-                transform: translateX(0%) translateY(-40%);
-                top: 50%;
+                transform: translateX(0%) translateY(-31px);
+                top: -8px;
+                left: 126px;
                 display: block;
                 background: linear-gradient(left, #fff 20%, #afafaf, #e9e9e9, #fff, #dedede);
                 width: 193px;
-                height: 60px;
-                box-shadow: -6px 9px 9px -1px rgba(0, 0, 0, 0.19);
+                height: 55px;
               }
             }
 
             p {
               position: absolute;
-              top: -50%;
-              width: 115%;
-              transform: translateY(10px);
+              top: -90px;
+              left: 105px;
+              width: 110px;
               color: #000;
               font-size: 16px;
               line-height: 18px;
               font-weight: bold;
-              text-indent: -15%;
             }
           }
 
           &:first-child {
+            top: 215px;
+            left: 130px;
+            .picture {
+              display: block;
+              img {
+                max-width: none;
+              }
+
+              &:after {
+                content: '';
+                display: block;
+                box-shadow: -61px -30px 86px 16px #fff;
+              }
+            }
+
             .label-block {
+              top: 290px;
               .logo {
                 border-left: 6px solid #2daae1;
+                &:before {
+                  content: "";
+                  position: absolute;
+                  top: 73px;
+                  left: -16px;
+                  background-color: #000;
+                  height: 10px;
+                  display: block;
+                  width: 200px;
+                  clip-path: polygon(28% 0, 100% 0, 100% 100%, 0 100%);
+                  filter: blur(35px);
+                }
+
+                &:after {
+                  top: 50px;
+                  left: 0;
+                }
               }
 
               &:before {
                 content: "";
                 position: absolute;
-                top: -50%;
-                left: -50%;
+                top: -45px;
+                left: -65px;
                 transform: translateX(10px) translateY(10px);
                 display: block;
                 border: 20px solid transparent;
@@ -97,14 +162,58 @@
                 border-left: 20px solid #2daae1;
               }
             }
+
+            p {
+              top: -32px;
+              left: -12px;
+              width: 150px;
+              text-indent: -15px;
+            }
+          }
+
+          &:last-child {
+            .label-block {
+              top: 390px;
+              &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                z-index: 1;
+                left: 35px;
+                top: -103px;
+                width: 61px;
+                height: 61px;
+                background-image: url('../img/perl.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+              }
+
+              .logo {
+                &:after {
+                  clip-path: polygon(28% 0, 100% 0, 100% 100%, 0 100%);
+                  box-shadow: -6px 9px 9px -1px rgba(0, 0, 0, 0.19);
+                }
+                &:before {
+                  content: "";
+                  position: absolute;
+                  top: 14px;
+                  left: 113px;
+                  background-color: #000;
+                  height: 10px;
+                  display: block;
+                  width: 200px;
+                  clip-path: polygon(28% 0, 100% 0, 100% 100%, 0 100%);
+                  filter: blur(35px);
+                }
+              }
+            }
           }
         }
 
         .plus {
           position: absolute;
-          top:50%;
-          left:50%;
-          transform: translateX(98%) translateY(-140%);
+          top: 175px;
+          left: 195px;
           width: 60px;
           height: 60px;
           background-color: #fff;
