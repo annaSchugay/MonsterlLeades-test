@@ -3,16 +3,23 @@
 @import "variables";
 @import "mixins/breackpoint";
 @import "fonts";
-@import "header";
-@import "banner";
 
 body {
+  width: 100vw;
   font-family: $font-family;
   .row {
     @include breakpoint(small-medium) {
       margin-right: -30px;
       margin-left: -30px;
     }
+  }
+}
+
+.clear-fix {
+  &:after, &:before {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
@@ -33,7 +40,7 @@ h1 {
   padding-right: 20px;
   padding-bottom: 25px;
   font-size: 48px;
-  letter-spacing: -1px;
+  letter-spacing: -2px;
   line-height: 50px;
   color: #fff;
   text-align: center;
@@ -63,3 +70,6 @@ h3 {
     color: $accent-color;
   }
 }
+
+@import "header";
+@import "banner";
