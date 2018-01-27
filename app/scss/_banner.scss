@@ -34,7 +34,7 @@
         position: absolute;
         top: 50%;
         left: 70px;
-        transform: translateY(-24%);
+        transform: translateY(-25%);
         .product {
           .picture {
             display: block;
@@ -98,6 +98,23 @@
               }
             }
           }
+        }
+
+        .plus {
+          position: absolute;
+          top:50%;
+          left:50%;
+          transform: translateX(98%) translateY(-140%);
+          width: 60px;
+          height: 60px;
+          background-color: #fff;
+          box-shadow: -1px 1px 28px -5px #fff;
+          color: #000;
+          font-weight: bold;
+          font-size: 36px;
+          line-height: 60px;
+          border-radius: 50%;
+          text-align: center;
         }
       }
     }
