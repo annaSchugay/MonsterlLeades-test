@@ -17,7 +17,7 @@
         box-shadow: inset 0 60px 300px -100px #fff;
         transform: rotate(-45deg);
         background: linear-gradient(left, #40405d 60%, #4e4f6c 64%);
-        clip-path: polygon(74% 7%, 100% 58%, 65% 100%, 0% 71%, 18% 18%);
+        clip-path: polygon(74% 7%, 100% 58%, 62% 100%, 0% 71%, 18% 18%);
       }
 
       .layer-second {
@@ -36,20 +36,23 @@
         left: 70px;
         transform: translateY(-24%);
         .product {
-          &:after {
-            content: '';
+          .picture {
             display: block;
-            box-shadow: -57px -28px 69px 16px #fff;
+            &:after {
+              content: '';
+              display: block;
+              box-shadow: -61px -30px 86px 16px #fff;
+            }
           }
 
-          .label {
+          .label-block {
             position: relative;
             display: block;
             .logo {
               position: relative;
               width: 100px;
-              height: 90px;
-              transform: translateX(-48%) translateY(-72%) skew(45deg);
+              height: 89px;
+              transform: translateX(-43%) translateY(-72%) skew(45deg);
               &:after {
                 position: absolute;
                 content: "";
@@ -59,22 +62,25 @@
                 background: linear-gradient(left, #fff 20%, #afafaf, #e9e9e9, #fff, #dedede);
                 width: 193px;
                 height: 60px;
+                box-shadow: -6px 9px 9px -1px rgba(0, 0, 0, 0.19);
               }
             }
 
             p {
               position: absolute;
               top: -50%;
-              width: 100%;
-              transform: translateY(15px);
+              width: 115%;
+              transform: translateY(10px);
               color: #000;
               font-size: 16px;
               line-height: 18px;
+              font-weight: bold;
+              text-indent: -15%;
             }
           }
 
           &:first-child {
-            .label {
+            .label-block {
               .logo {
                 border-left: 6px solid #2daae1;
               }
