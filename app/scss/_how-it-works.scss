@@ -1,0 +1,70 @@
+.how-it-works {
+  padding-top: 95px;
+  background: url("../img/bg-picture.png");
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  h2 {
+    position: relative;
+    min-height: 82px;
+    span {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 50%;
+      transform: translateX(-29%) translateY(0);
+      height: 82px;
+      background-color: $accent-color;
+      width: 57%;
+      @include breakpoint(middle-small) {
+        width: 25%;
+        left: 38%;
+        height: 45px;
+        top: 50%;
+        transform: translateX(-95%) translateY(-50%);
+      }
+
+      @include breakpoint(small-tablet-portrait) {
+        width: 50%;
+        transform: translateX(-25%) translateY(-50%);
+      }
+    }
+  }
+
+  p {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .img {
+    img {
+      transform: translateY(30px);
+      @include breakpoint(middle-small) {
+        transform: translateY(0);
+      }
+    }
+
+    @include breakpoint(extra-small) {
+      float: right;
+      width: 30%;
+    }
+  }
+
+  @include breakpoint(middle-small) {
+    background-position: 0 0;
+    background-size: cover;
+  }
+
+  @include breakpoint(extra-small) {
+    padding-top: 45px;
+  }
+}

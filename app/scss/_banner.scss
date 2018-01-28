@@ -2,8 +2,7 @@
 
 .banner {
   padding-top: 60px;
-  background: url("../img/women.png") 0 -62px no-repeat;
-  background-color: $background-color;
+  background: url("../img/women.png") -135% -62px no-repeat;
   .our-products {
     .products-pictures-wrapper {
       position: relative;
@@ -23,15 +22,10 @@
           text-align: center;
           text-shadow: 6px 11px 9px rgba(0, 0, 0, 0.64);
           &:after {
-            content: "";
+            content: url('../img/arrow.png');
             position: absolute;
             top: 100%;
             left: 50%;
-            width: 100px;
-            height: 40px;
-            background-image: url('../img/arrow.png');
-            background-repeat: no-repeat;
-            background-size: cover;
           }
         }
       }
@@ -263,8 +257,8 @@
       span {
         position: relative;
         left: 50%;
-        transform: translateX(-50%);
-        margin-left: 20px;
+        transform: translateX(-54%);
+        margin-left: 30px;
         width: 250px;
         display: block;
         background-color: $accent-color;
@@ -362,5 +356,9 @@
         }
       }
     }
+  }
+
+  @include breakpoint(large) {
+    background: url("../img/women.png") 0 -62px no-repeat;
   }
 }
