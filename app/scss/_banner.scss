@@ -1,9 +1,9 @@
 @import "variables";
 
 .banner {
-  padding-top: 60px;
   background: url("../img/women.png") -135% -62px no-repeat;
   .our-products {
+    padding-top: 60px;
     .products-pictures-wrapper {
       position: relative;
       min-height: 330px;
@@ -31,6 +31,18 @@
           @include breakpoint(middle-small) {
             font-size: 18px;
           }
+        }
+
+        @include breakpoint(horizontal-iPad) {
+          left: 0;
+        }
+
+        @include breakpoint(small) {
+          left: -85px;
+        }
+
+        @include breakpoint(extra-small-mobile) {
+          display: none;
         }
       }
 
@@ -60,6 +72,10 @@
         @include breakpoint(middle-small) {
           width: 200px;
           height: 200px;
+        }
+
+        @include breakpoint(extra-small-mobile) {
+          transform: translateX(-13%) translateY(-20%) rotate(-45deg);
         }
       }
 
@@ -104,11 +120,6 @@
                 background: linear-gradient(left, #fff 20%, #afafaf, #e9e9e9, #fff, #dedede);
                 width: 193px;
                 height: 55px;
-                @include breakpoint(middle-small) {
-                  width: 135px;
-                  height: 45px;
-                  top: 16px;
-                }
               }
             }
 
@@ -122,6 +133,10 @@
               line-height: 18px;
               font-weight: bold;
             }
+
+            @include breakpoint(extra-small-mobile) {
+              display: none;
+            }
           }
 
           &:first-child {
@@ -130,8 +145,8 @@
             .picture {
               display: block;
               img {
-                @include breakpoint(middle-small) {
-                  width: 115px;
+                @include breakpoint(extra-small-mobile) {
+                  width: 75px;
                 }
               }
 
@@ -175,10 +190,7 @@
                 border: 20px solid transparent;
                 border-bottom: 20px solid #2daae1;
                 border-left: 20px solid #2daae1;
-                @include breakpoint(middle-small) {
-                  border-width: 10px;
-                }
-                }
+              }
             }
 
             p {
@@ -198,8 +210,8 @@
           &:last-child {
             .picture {
               img {
-                @include breakpoint(middle-small) {
-                  width: 200px;
+                @include breakpoint(extra-small-mobile) {
+                  width: 130px;
                 }
               }
             }
@@ -245,6 +257,10 @@
               left: 150px;
               transform: translateX(0) translateY(0);
             }
+
+            @include breakpoint(extra-small-mobile) {
+              left: 100px;
+            }
           }
         }
 
@@ -270,16 +286,25 @@
             line-height: 45px;
             font-size: 24px;
           }
+
+          @include breakpoint(extra-small-mobile) {
+            top: 73px;
+            left: 66px;
+          }
         }
       }
 
       @include breakpoint(extra-small) {
-        left: 100px;
+        left: 65px;
       }
 
       @include breakpoint(extra-small-mobile) {
-        left: 100px;
+        left: 15px;
+        min-height: 160px;
       }
+    }
+    @include breakpoint(extra-small) {
+      background-color: rgba(32, 32, 71, 0.29);
     }
   }
 
@@ -332,7 +357,12 @@
           transform: translateX(-100%);
           margin-left: -10px;
         }
-      }
+
+        @include breakpoint(extra-small-mobile) {
+          width: 215px;
+          font-size: 30px;
+        }
+        }
     }
 
     .discount-prise {
@@ -393,6 +423,9 @@
       input {
         height: 47px;
         margin-bottom: 3px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 18px;
         box-shadow: 2px 5px 7px 0px #7a7c7e;
         border: none;
         border-radius: 5px;
@@ -412,6 +445,13 @@
           &:hover {
             box-shadow: 0px 0px 0px 0px rgba(226, 30, 30, 0.48);
           }
+          &:focus {
+            border: none;
+          }
+        }
+
+        &:focus {
+          border: 1px solid $accent-color;
         }
       }
     }
@@ -419,5 +459,10 @@
 
   @include breakpoint(large) {
     background: url("../img/women.png") 0 -62px no-repeat;
+  }
+
+  @include breakpoint(extra-small) {
+    background-position: 30% 0;
+    background-size: cover;
   }
 }
