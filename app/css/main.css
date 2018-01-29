@@ -106,12 +106,14 @@ h1 {
 h2 {
   color: #000;
   font-size: 48px;
-  letter-spacing: -2.5px; }
+  letter-spacing: -2.5px;
+  padding-top: 15px;
+  padding-bottom: 15px; }
   @media (max-width: 768px) {
     h2 {
       font-size: 28px; } }
 
-h3 {
+h4 {
   font-size: 22px;
   line-height: 30px;
   color: #c2c4eb;
@@ -119,7 +121,7 @@ h3 {
   padding-top: 10px;
   padding-bottom: 10px;
   letter-spacing: -0.5px; }
-  h3 span {
+  h4 span {
     color: #ffe200; }
 
 header {
@@ -642,3 +644,24 @@ header {
   @media (max-width: 768px) {
     .how-it-works {
       padding-top: 45px; } }
+
+.product-composition {
+  padding-top: 50px; }
+  .product-composition h2 {
+    position: relative;
+    color: #ffe200;
+    text-align: center; }
+    .product-composition h2:after {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      width: 30%;
+      -webkit-transform: translateX(-65%) translateY(0);
+          -ms-transform: translateX(-65%) translateY(0);
+              transform: translateX(-65%) translateY(0);
+      display: block;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      -webkit-box-shadow: 1px 1px 274px 29px #fff;
+              box-shadow: 1px 1px 274px 29px #fff; }

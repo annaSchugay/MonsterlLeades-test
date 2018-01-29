@@ -1,0 +1,19 @@
+.product-composition {
+  padding-top: 50px;
+  h2 {
+    position: relative;
+    color: $accent-color;
+    text-align: center;
+    &:after {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      width: 30%;
+      transform: translateX(-65%) translateY(0);
+      display: block;
+      border-radius: 50%;
+      box-shadow: 1px 1px 274px 29px #fff;
+    }
+  }
+}
